@@ -3,8 +3,9 @@ const key = 'fTReLBIUjNaFvRYYGGytjbiwO6Kc58tn'
 const getWeather = async (id)=> {
     const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${id}?apikey=${key}`;
+    const details = '&details=true';
 
-    const response = await fetch(base + query);
+    const response = await fetch(base + query + details);
     const data = await response.json();
 
     return data[0];

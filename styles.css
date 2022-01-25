@@ -5,3 +5,7 @@
     width: 100px;
     margin-bottom: -50px;
 }
+
+.error-message{
+    color: red;
+}

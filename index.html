@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>WeatherWhere</title>
+    <link rel="icon" href="img/icons/1.svg">
+    <title>WW?</title>
 </head>
 <body>
     <div class="container my-5 mx-auto">
-        <h1 class="text-muted text-center my-4">WeatherWhere</h1>
+        <h1 class="text-muted text-center my-4">WeatherWhere?</h1>
 
         <form class="change-location my-4 text-center text-muted">
             <label for="city">Choose your location</label>
             <input type="text" name="city" class="form-control p-4">
         </form>
+
+        <h6 class="error-message d-none">
+            Whoops! Something went wrong. Make sure you spelled the city correctly.
+        </h6>
     
 
         <div class="card shadow-lg rounded d-none">
@@ -30,7 +35,17 @@
                     <span>&deg;F</span>
                 </div>
             </div>
+
+            <table class="table my-2 table-striped text-muted text-medium">
+                <tr><td>Feels like: </td></tr>
+                <tr><td>Wind speed: </td></tr>
+                <tr><td>Wind gust: </td></tr>
+                <tr><td>UV Index: </td></tr>
+                <tr><td>Humidity: </td></tr>
+            </table>
         </div>
+
+        
     </div>
     
 
